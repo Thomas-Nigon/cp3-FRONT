@@ -1,0 +1,69 @@
+.country-card {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.country-card h1 {
+  color: #2c3e50;
+  font-size: 28px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.country-card p {
+  font-size: 18px;
+  color: #34495e;
+  margin: 15px 0;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.country-card p:first-of-type {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2c3e50;
+  background-color: transparent;
+  padding: 0;
+}
+
+.country-card p:nth-of-type(2) {
+  font-size: 48px;
+  background-color: transparent;
+  padding: 0;
+}
+
+.country-card p:last-of-type {
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+/* Loading and Error states */
+.loading,
+.error {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+  color: #666;
+}
+
+.error {
+  color: #e74c3c;
+}
+
+.country-countainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0 auto;
+}
