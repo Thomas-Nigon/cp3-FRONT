@@ -1,0 +1,53 @@
+.countriesContainer {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  background-color: #f8f9fa;
+}
+
+.countriesContainer h1 {
+  grid-column: 1 / -1;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+.countryCard {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  margin: 10px;
+}
+
+.countryCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.countryCard h2 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 20px;
+}
+
+.countryCard p {
+  margin: 5px 0;
+  color: #666;
+  font-size: 16px;
+}
+
+.countryCard a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.countryCard a:hover {
+  text-decoration: underline;
+}

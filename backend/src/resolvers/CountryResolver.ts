@@ -10,8 +10,8 @@ export class CountryResolver {
   }
 
   @Query(() => Country)
-  async country(@Arg("code") code: string) {
-    return Country.findOne({ where: { code }, relations: { continent: true } });
+  async country(@Arg("id") id: number) {
+    return Country.findOne({ where: { id }, relations: { continent: true } });
   }
 
   @Mutation(() => Country)
